@@ -1,8 +1,9 @@
 'use strict'
 
 const express = require('express')
-
 const app = express()
+const server = require('http').createServer(app)
+const io = require('socket.io')(server)
 
 app.use(express.static('public'))
 
@@ -11,11 +12,15 @@ app.set('view engine', 'pug')
 
 app.get('/', (req, res) => { res.render('index') })
 
+io.on('connection', (socket) => {
+  console.log('Server connected to client!')
+})
+
 var port = process.env.PORT || 3000
-app.listen(port, () => {
+server.listen(port, () => {
   console.log('Server listening on port ' + port)
 })
-app.on('error', (error) => {
+server.on('error', (error) => {
   console.log(error)
 })
 
