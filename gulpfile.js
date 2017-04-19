@@ -9,11 +9,11 @@ const html2pug = require('gulp-html2pug')
 
 
 gulp.task('sass', function(){
-  return gulp.src('./public/stylesheets/sass/*.sass')
+  return gulp.src('./public/stylesheets/sass/index.sass')
         .pipe(sass({style: 'compressed'}))
         .pipe(postcss([ autoprefixer() ]))
         .on('error', gutil.log)
-        .pipe(gulp.dest('./public/stylesheets'))
+        .pipe(gulp.dest('./public/stylesheets/css'))
 })
 
 gulp.task('pug', function() {
@@ -23,8 +23,8 @@ gulp.task('pug', function() {
 });
 
 gulp.task('watch', function(){
-gulp.watch('views/index.html', ['pug'])
-  gulp.watch('public/stylesheets/home.sass', ['sass'])
+gulp.watch('views/*.html', ['pug'])
+  gulp.watch('public/stylesheets/sass/*.sass', ['sass'])
 })
 
 gulp.task('default', ['watch', 'sass', 'pug'])
