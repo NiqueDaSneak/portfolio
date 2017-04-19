@@ -9,22 +9,29 @@ img:first-of-type
 
 footer
   color: $siteGrey
-  font-size: 4.4vw
   position: absolute
   bottom: 6vh
   width: 100vw
-  @include responsive
-    font-size: 22px
   .copyright
     font-weight: $thin
     font-style: italic
+    font-size: 15px
     a
       color: $siteGrey
+      transition: color .6s
+    a:hover
+      color: white
   .links
     padding-top: 5vh
+    font-size: 4.4vw
+    @include responsive
+      font-size: 22px
     a
       font-weight: $thin
       padding-right: 2vw
       padding-left: 2vw
       text-decoration: none
       color: $siteGrey
+      transition: color .6s
+    a:hover
+      color: white
