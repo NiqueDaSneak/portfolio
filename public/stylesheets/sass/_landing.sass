@@ -1,0 +1,30 @@
+body
+  background-color: $siteGreen
+  text-align: center
+
+img:first-of-type
+  padding-top: 20vh
+  width: 60vw
+  max-width: 300px
+
+footer
+  color: $siteGrey
+  font-size: 4.4vw
+  position: absolute
+  bottom: 6vh
+  width: 100vw
+  @include responsive
+    font-size: 22px
+  .copyright
+    font-weight: $thin
+    font-style: italic
+    a
+      color: $siteGrey
+  .links
+    padding-top: 5vh
+    a
+      font-weight: $thin
+      padding-right: 2vw
+      padding-left: 2vw
+      text-decoration: none
+      color: $siteGrey

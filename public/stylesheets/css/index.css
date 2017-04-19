@@ -1,0 +1,34 @@
+body {
+  background-color: #011901;
+  text-align: center; }
+
+img:first-of-type {
+  padding-top: 20vh;
+  width: 60vw;
+  max-width: 300px; }
+
+footer {
+  color: #9ba1aa;
+  font-size: 4.4vw;
+  position: absolute;
+  bottom: 6vh;
+  width: 100vw; }
+  @media only screen and (min-width: 720px) {
+    footer {
+      font-size: 22px; } }
+  footer .copyright {
+    font-weight: 300;
+    font-style: italic; }
+    footer .copyright a {
+      color: #9ba1aa; }
+  footer .links {
+    padding-top: 5vh; }
+    footer .links a {
+      font-weight: 300;
+      padding-right: 2vw;
+      padding-left: 2vw;
+      text-decoration: none;
+      color: #9ba1aa; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
