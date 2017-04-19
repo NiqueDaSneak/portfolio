@@ -2,10 +2,16 @@ body {
   background-color: #011901;
   text-align: center; }
 
-img:first-of-type {
+.logo {
   padding-top: 20vh;
   width: 60vw;
   max-width: 300px; }
+
+.online {
+  width: 1vw; }
+  @media only screen and (min-width: 720px) {
+    .online {
+      width: .4vw; } }
 
 footer {
   color: #9ba1aa;
@@ -29,8 +35,7 @@ footer {
         font-size: 22px; } }
     footer .links a {
       font-weight: 300;
-      padding-right: 2vw;
-      padding-left: 2vw;
+      padding-right: 4vw;
       text-decoration: none;
       color: #9ba1aa;
       transition: color .6s; }

@@ -2,10 +2,15 @@ body
   background-color: $siteGreen
   text-align: center
 
-img:first-of-type
+.logo
   padding-top: 20vh
   width: 60vw
   max-width: 300px
+
+.online
+  width: 1vw
+  @include responsive
+    width: .4vw
 
 footer
   color: $siteGrey
@@ -28,8 +33,8 @@ footer
       font-size: 22px
     a
       font-weight: $thin
-      padding-right: 2vw
-      padding-left: 2vw
+      padding-right: 4vw
+      // padding-left: 2vw
       text-decoration: none
       color: $siteGrey
       transition: color .6s
