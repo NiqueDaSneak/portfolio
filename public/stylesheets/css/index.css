@@ -2,6 +2,9 @@ body {
   background-color: #011901;
   text-align: center; }
 
+.main-content {
+  display: none; }
+
 .logo {
   padding-top: 20vh;
   width: 60vw;
