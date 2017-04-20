@@ -19,8 +19,9 @@ body {
 footer {
   color: #9ba1aa;
   position: absolute;
-  bottom: 6vh;
-  width: 100vw; }
+  bottom: 10vh;
+  width: 100vw;
+  text-align: center; }
   footer .copyright {
     font-weight: 300;
     font-style: italic;
@@ -28,8 +29,8 @@ footer {
     footer .copyright a {
       color: #9ba1aa;
       transition: color .6s; }
-    footer .copyright a:hover {
-      color: white; }
+      footer .copyright a:hover {
+        color: white; }
   footer .links {
     padding-top: 5vh;
     font-size: 4.4vw; }
@@ -42,8 +43,30 @@ footer {
       text-decoration: none;
       color: #9ba1aa;
       transition: color .6s; }
-    footer .links a:hover {
+      footer .links a:hover {
+        color: white; }
+
+.menu {
+  text-align: center;
+  height: 5vh;
+  position: absolute;
+  bottom: -5vh;
+  width: 100vw;
+  transition: bottom .5s; }
+  .menu a {
+    font-weight: 300;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    text-decoration: none;
+    color: #9ba1aa;
+    transition: color .6s;
+    font-size: 4.4vw; }
+    @media only screen and (min-width: 720px) {
+      .menu a {
+        font-size: 22px; } }
+    .menu a:hover {
       color: white; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
