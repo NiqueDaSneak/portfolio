@@ -29,8 +29,8 @@ footer {
     footer .copyright a {
       color: #9ba1aa;
       transition: color .6s; }
-    footer .copyright a:hover {
-      color: white; }
+      footer .copyright a:hover {
+        color: white; }
   footer .links {
     padding-top: 5vh;
     font-size: 4.4vw; }
@@ -43,8 +43,8 @@ footer {
       text-decoration: none;
       color: #9ba1aa;
       transition: color .6s; }
-    footer .links a:hover {
-      color: white; }
+      footer .links a:hover {
+        color: white; }
 
 .menu {
   text-align: center;
@@ -61,6 +61,11 @@ footer {
     color: #9ba1aa;
     transition: color .6s;
     font-size: 4.4vw; }
+    @media only screen and (min-width: 720px) {
+      .menu a {
+        font-size: 22px; } }
+    .menu a:hover {
+      color: white; }
 
 body {
   font-family: 'Roboto', sans-serif;

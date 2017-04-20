@@ -1,7 +1,6 @@
 .menu
   text-align: center
   height: 5vh
-  // background-color: black
   position: absolute
   bottom: -5vh
   width: 100vw
@@ -14,3 +13,7 @@
     color: $siteGrey
     transition: color .6s
     font-size: 4.4vw
+    @include responsive
+      font-size: 22px
+    &:hover
+      color: white
