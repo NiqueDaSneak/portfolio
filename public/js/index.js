@@ -3,13 +3,19 @@ $(document).ready(() => {
     // SOCKET & BOT CLIENT
     var socket = io.connect();
     socket.on('botMessage', (data) => {
-        console.log(data.data)
         $('.messages').prepend("<p class='bot-message'>" + data.data + "</p>")
     })
     socket.on('menuButtons', (data) => {
+        if (data.sendEmail) {
+            $('.btns').append("<button type='button' class='external'><a href='mailto:thisisdom4@gmail.com'>Craft your email</a></button>")
+        }
+        if (data.callPhone) {
+            $('.btns').append("<button type='button' class='external'><a href='tel:5132917758'>Make the call</a></button>")
+        }
+
         for (var i = 0; i < data.data.length; i++) {
             $('.btns').append("<button type='button' value='" + data.data[i] + "'>" + data.data[i] + "</button>")
-            $('.btns').addClass('exposed')
+            $('.btns').css('left', '0vh')
         }
     })
 
@@ -41,16 +47,24 @@ $(document).ready(() => {
         })
     })
 
+    // exit chat
     $('.chat-ui header a').click(() => {
         $('.chat-ui').fadeOut(1200, () => {
             $('.main-content').fadeIn(1200)
+            $('.btns').empty()
+            $('.messages').empty()
         })
         return false
     })
 
     $('.btns').click(() => {
-      socket.emit('menuRequest', { data: event.target.value })
-      $('.btns').removeClass('exposed')
+      if ($(event.target).parent().hasClass('external')) {
+        socket.emit('welcomeMessage')
+      } else {
+        socket.emit('menuRequest', {data: event.target.value})
+      }
+        $('.btns').empty()
+        $('.messages').empty()
     })
 
     // end of DOM READY

@@ -21,23 +21,38 @@ io.on('connection', (socket) => {
 
     socket.on('welcomeMessage', () => {
 
-        socket.emit('botMessage', { data: db.welcomeMessage.message })
+        socket.emit('botMessage', {data: db.welcomeMessage.message})
 
         var menuButtons = function() {
-          return socket.emit('menuButtons', { data: db.welcomeMessage.options })
+            return socket.emit('menuButtons', {data: db.welcomeMessage.options})
         }
 
-        setTimeout(menuButtons, 1800)
+        setTimeout(menuButtons, 1200)
     })
 
     socket.on('mainMenu', () => {
-        socket.emit('botMessage', { data: mainMenuMessage() })
+        socket.emit('botMessage', {data: mainMenuMessage()})
     })
 
     socket.on('menuRequest', (data) => {
-
-      console.log(db[data.data].message);
-      // socket.emit('botMessage', { data:  })
+        socket.emit('botMessage', {
+            data: db[data.data].message
+        })
+        if (data.data === 'Send Email') {
+            socket.emit('menuButtons', {
+                data: db[data.data].options,
+                sendEmail: true
+            })
+        } else if (data.data === 'Call Him') {
+          socket.emit('menuButtons', {
+              data: db[data.data].options,
+              callPhone: true
+          })
+        } else {
+            socket.emit('menuButtons', {
+                data: db[data.data].options
+            })
+        }
     })
 
 })
