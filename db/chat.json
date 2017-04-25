@@ -1,0 +1,18 @@
+{
+    "welcomeMessage": {
+        "message": "Welcome! My name is DOMbot! Dom built me to respond exactly as he would. Here are some topics for you to explore:",
+        "options": ["See his FAQs", "Want to hire Dom?", "Contact Dom", "Tell me a joke"]
+    },
+    "See his FAQs": {
+        "message": "these are FAQs"
+    },
+    "Want to hire Dom?": {
+        "message": "this is how you hire dom"
+    },
+    "Contact Dom": {
+        "message": "this is how you contact dom"
+    },
+    "Tell me a joke": {
+        "message": "this is a joke"
+    }
+}
