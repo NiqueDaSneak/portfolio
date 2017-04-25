@@ -1,0 +1,56 @@
+{
+    "welcomeMessage": {
+        "message": "Welcome! My name is DOMbot! Dom built me to respond exactly as he would. Here are things I can help with:",
+        "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    },
+    "See FAQs": {
+        "message": "Great! What question would you like:",
+        "options": ["First FAQ","Second FAQ","Third FAQ","Fourth FAQ"]
+
+    },
+    "Contact Dom": {
+        "message": "this is how you contact dom",
+        "options": ["Send Email", "Call Him"]
+
+    },
+    "Tell me a joke": {
+        "message": "Choose a joke:",
+        "options": ["Joke for a priest", "Joke for your boss", "NSFW"]
+    },
+    "First FAQ": {
+      "message": "This is my first FAQ. Its great!",
+      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    },
+    "Second FAQ": {
+      "message": "This is my second FAQ. Its awesome!",
+      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    },
+    "Third FAQ": {
+      "message": "This is my third FAQ. Its rad!",
+      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    },
+    "Fourth FAQ": {
+      "message": "This is my fourth FAQ. Its fucking baller!",
+      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    },
+    "Send Email": {
+      "message": "Dom will be glad to hear from you! Tap the button below to open your email client",
+      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    },
+    "Call Him": {
+      "message": "Dom will be glad to hear from you! If you are on a cell phone, you can just tap the button below to make the call. If not, his number is 513-291-7758",
+      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    },
+    "Joke for a priest": {
+      "message": "Joke goes here",
+      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    },
+    "Joke for your boss": {
+      "message": "Joke goes here",
+      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    },
+    "NSFW": {
+      "message": "Joke goes here",
+      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    }
+}
