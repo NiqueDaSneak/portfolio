@@ -49,7 +49,7 @@ footer {
 .menu {
   text-align: center;
   height: 5vh;
-  position: absolute;
+  position: fixed;
   bottom: -5vh;
   width: 100vw;
   transition: bottom .5s; }
@@ -66,6 +66,40 @@ footer {
         font-size: 22px; } }
     .menu a:hover {
       color: white; }
+
+.chat-ui {
+  display: none; }
+  .chat-ui header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: 10vh; }
+  .chat-ui .btns {
+    position: fixed;
+    bottom: 2vh;
+    left: -66vw;
+    transition: left .4s; }
+    .chat-ui .btns button {
+      display: block;
+      color: white;
+      font-size: 6.4vw;
+      margin-top: 2vh;
+      background-color: #9ba1aa;
+      width: 64vw;
+      border: none;
+      padding: 1vh 0vh 1vh 0vh;
+      border-radius: 0vh 2vh 2vh 0vh; }
+
+.exposed {
+  left: 0 !important; }
+
+.messages {
+  height: 90vh;
+  position: absolute;
+  bottom: 0; }
+  .messages p {
+    color: #9ba1aa; }
 
 body {
   font-family: 'Roboto', sans-serif;
