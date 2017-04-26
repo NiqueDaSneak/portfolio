@@ -17,7 +17,7 @@ body {
       width: .4vw; } }
 
 footer {
-  color: #9ba1aa;
+  color: #4b535f;
   position: absolute;
   bottom: 10vh;
   width: 100vw;
@@ -27,7 +27,7 @@ footer {
     font-style: italic;
     font-size: 15px; }
     footer .copyright a {
-      color: #9ba1aa;
+      color: #4b535f;
       transition: color .6s; }
       footer .copyright a:hover {
         color: white; }
@@ -41,7 +41,7 @@ footer {
       font-weight: 300;
       padding-right: 4vw;
       text-decoration: none;
-      color: #9ba1aa;
+      color: #4b535f;
       transition: color .6s; }
       footer .links a:hover {
         color: white; }
@@ -58,7 +58,7 @@ footer {
     padding-right: 2vw;
     padding-left: 2vw;
     text-decoration: none;
-    color: #9ba1aa;
+    color: #4b535f;
     transition: color .6s;
     font-size: 4.4vw; }
     @media only screen and (min-width: 720px) {
@@ -73,10 +73,10 @@ footer {
     width: 100vw;
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color: #4b535f;
     height: 10vh; }
     .chat-ui header a {
-      color: #9ba1aa;
+      color: white;
       line-height: 10vh; }
   .chat-ui .btns {
     position: fixed;
@@ -88,11 +88,16 @@ footer {
       color: white;
       font-size: 6.4vw;
       margin-top: 2vh;
-      background-color: #9ba1aa;
+      background-color: #4b535f;
       width: 64vw;
       border: none;
       padding: 1vh 0vh 1vh 0vh;
-      border-radius: 0vh 2vh 2vh 0vh; }
+      border-radius: 0vh 2vh 2vh 0vh;
+      font-weight: 300; }
+      @media only screen and (min-width: 720px) {
+        .chat-ui .btns button {
+          width: 30vw;
+          font-size: 1.6vw; } }
       .chat-ui .btns button a {
         text-decoration: none;
         color: white; }
@@ -103,9 +108,13 @@ footer {
   bottom: 0;
   margin-left: 4vw;
   margin-right: 4vw; }
+  @media only screen and (min-width: 720px) {
+    .messages {
+      margin-left: 5.5vw; } }
   .messages p {
-    color: #9ba1aa; }
+    color: #4b535f; }
 
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0; }
+  margin: 0;
+  font-weight: 300; }
