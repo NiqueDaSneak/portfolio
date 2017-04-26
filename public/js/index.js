@@ -3,14 +3,14 @@ $(document).ready(() => {
     // SOCKET & BOT CLIENT
     var socket = io.connect();
     socket.on('botMessage', (data) => {
-        $('.messages').prepend("<p class='bot-message'>" + data.data + "</p>")
+        $('.messages').prepend("<p class='bot-message'>" + data.data + "</p>").hide().fadeIn('slow');
     })
     socket.on('menuButtons', (data) => {
         if (data.sendEmail) {
-            $('.btns').append("<button type='button' class='external'><a href='mailto:thisisdom4@gmail.com'>Craft your email</a></button>")
+            $('.btns').append("<button type='button' class'external'><a href='mailto:thisisdom4@gmail.com'>Craft your email</a></button>")
         }
         if (data.callPhone) {
-            $('.btns').append("<button type='button' class='external'><a href='tel:5132917758'>Make the call</a></button>")
+            $('.btns').append("<button type='button' class'external'><a href='tel:5132917758'>Make the call</a></button>")
         }
 
         for (var i = 0; i < data.data.length; i++) {

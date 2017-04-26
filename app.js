@@ -35,6 +35,7 @@ io.on('connection', (socket) => {
     })
 
     socket.on('menuRequest', (data) => {
+      console.log(data.data);
         socket.emit('botMessage', {
             data: db[data.data].message
         })
