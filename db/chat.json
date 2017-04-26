@@ -1,11 +1,11 @@
 {
     "welcomeMessage": {
         "message": "Welcome! My name is DOMbot! Dom built me to respond exactly as he would. Here are things I can help with:",
-        "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+        "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
-    "See FAQs": {
-        "message": "Great! What question would you like:",
-        "options": ["First FAQ","Second FAQ","Third FAQ","Fourth FAQ"]
+    "Need to knows": {
+        "message": "Great! What topic would you like:",
+        "options": ["Why do you do what you do?","How do you spend free time?","Thoughts on leadership?","Value proposition"]
 
     },
     "Contact Dom": {
@@ -17,40 +17,40 @@
         "message": "Choose a joke:",
         "options": ["Joke for a priest", "Joke for your boss", "NSFW"]
     },
-    "First FAQ": {
+    "Why do you do what you do?": {
       "message": "This is my first FAQ. Its great!",
-      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+      "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
-    "Second FAQ": {
-      "message": "This is my second FAQ. Its awesome!",
-      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    "How do you spend free time?": {
+      "message": "I spend a lot of my time in my local yoga studio, The Yoga Bar OTR. I am currently about half way done with my yoga teacher training! I think its an interesting combination to have tech skills but also teach yoga. Its helped me find balance in the craziness of work/life. I am also a big NBA fan (Los Angeles Lakers). I love being outside and I enjoy a nice glass (or three) of Riesling.",
+      "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
-    "Third FAQ": {
-      "message": "This is my third FAQ. Its rad!",
-      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    "Thoughts on leadership?": {
+      "message": "",
+      "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
-    "Fourth FAQ": {
-      "message": "This is my fourth FAQ. Its fucking baller!",
-      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+    "Value proposition": {
+      "message": "I believe in push the envelope, and I am always willing to fail if I am trying something new. I like to iterate quickly, and learn as I go. I also am good at applying the knowledge I've learned in its cumulative form over time. I understand people, and use that to help pull the best ideas out of those I work with. I can be vulnerable, and really internalize and apply valuable feedback. But most of all, I am endlessly curious. The thirst to innovate is what ultimately allows me to help shape what we think is possible with technology.",
+      "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "Send Email": {
       "message": "Dom will be glad to hear from you! Tap the button below to open your email client",
-      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+      "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "Call Him": {
       "message": "Dom will be glad to hear from you! If you are on a cell phone, you can just tap the button below to make the call. If not, his number is 513-291-7758",
-      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+      "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "Joke for a priest": {
       "message": "Joke goes here",
-      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+      "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "Joke for your boss": {
       "message": "Joke goes here",
-      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+      "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "NSFW": {
       "message": "Joke goes here",
-      "options": ["See FAQs", "Contact Dom", "Tell me a joke"]
+      "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     }
 }
