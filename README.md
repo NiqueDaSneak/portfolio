@@ -1,0 +1,1 @@
+# This web app displays all relevant links for myself (portfolio, LinkedIn, Github, etc.). I was inspired by the simplicity of the site for my favorite UX designer, but took it a step further by implementing a chat bot for users to interact with. The chatbot provides information about myself, as well as provides a means to contact me directly (email & phone).
