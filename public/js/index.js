@@ -60,11 +60,15 @@ $(document).ready(() => {
     $('.btns').click(() => {
       if ($(event.target).parent().hasClass('external')) {
         socket.emit('welcomeMessage')
-      } else {
-        socket.emit('menuRequest', {data: event.target.value})
-      }
         $('.btns').empty()
         $('.messages').empty()
+      } else if (event.target.value === undefined) {
+        console.log('nothing clicked')
+      } else {
+        socket.emit('menuRequest', {data: event.target.value})
+        $('.btns').empty()
+        $('.messages').empty()
+      }
     })
 
     // end of DOM READY
