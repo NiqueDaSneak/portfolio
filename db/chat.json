@@ -18,15 +18,15 @@
         "options": ["Joke for a priest", "Joke for your boss", "NSFW"]
     },
     "Why do you do what you do?": {
-      "message": "This is my first FAQ. Its great!",
+      "message": "I feel like my purpose in life is to constantly push the envelope; to push the limits of human ability; to push those around me to be their absolute best; to push myself to do the same. I have absolutely no interest in following or helping to maintain the status quo. I am here to push it off the highest cliff and watch it shatter into a the smallest pieces.",
       "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "How do you spend free time?": {
-      "message": "I spend a lot of my time in my local yoga studio, The Yoga Bar OTR. I am currently about half way done with my yoga teacher training! I think its an interesting combination to have tech skills but also teach yoga. Its helped me find balance in the craziness of work/life. I am also a big NBA fan (Los Angeles Lakers). I love being outside and I enjoy a nice glass (or three) of Riesling.",
+      "message": "I spend a lot of my time in my local yoga studio, The Yoga Bar OTR. I am currently about half way done with my yoga teacher training! I think it’s an interesting combination to have tech skills but also teach yoga. It’s helped me find balance in the craziness of work/life. I am also a big NBA fan (Los Angeles Lakers). I love being outside and I enjoy a nice glass (or three) of Riesling.",
       "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "Thoughts on leadership?": {
-      "message": "",
+      "message": "I feel like for someone like me, I need an extremely strong leader to look up to, or I have a tendency to take things into my own hands and become the leader. In the past, I wasn't able to own this about myself. However, while I lived in New York City I adopted the mantra, 'own it'. I feel like for anyone trying to get anyone to do anything (via power or influence), if you can't show that you are the most bought in person to your own vision, how can you expect anyone to follow. I think leadership starts with leading one's self.",
       "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "Value proposition": {
@@ -42,15 +42,15 @@
       "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "Joke for a priest": {
-      "message": "Joke goes here",
+      "message": "A ham sandwich walks into a bar and orders a beer. Bartender says, 'Sorry we don't serve food here.'",
       "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "Joke for your boss": {
-      "message": "Joke goes here",
+      "message": "Sam walks into his boss’s office and says 'Sir, I’ll be straight with you, I know the economy isn’t great, but I have over three companies after me, and I would like to respectfully ask for a raise.' After a few minutes of haggling the boss finally agrees to a 5% raise, and Sam happily gets up to leave. 'By the way,' asks the boss, 'Which three companies are after you?' Sam replies, 'The electric company, water company, and phone company!'",
       "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     },
     "NSFW": {
-      "message": "Joke goes here",
+      "message": "A deer walks out of a gay bar and exclaims, 'Damn I just blew 30 bucks in there.'",
       "options": ["Need to knows", "Contact Dom", "Tell me a joke"]
     }
 }
