@@ -9,7 +9,7 @@
 
     },
     "Contact Dom": {
-        "message": "this is how you contact dom",
+        "message": "I can help you reach him by phone or email...",
         "options": ["Send Email", "Call Him"]
 
     },
