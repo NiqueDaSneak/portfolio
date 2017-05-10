@@ -4,6 +4,8 @@ body {
 
 .main-content {
   display: none; }
+  .main-content p:first-of-type {
+    color: #4b535f; }
 
 .logo {
   padding-top: 20vh;
