@@ -7,6 +7,11 @@ const io = require('socket.io')(server)
 var fs = require('fs')
 var db = JSON.parse(fs.readFileSync('db/chat.json', 'utf8'))
 
+var path = require('path')
+const favicon = require('serve-favicon')
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+
+
 app.use(express.static('public'))
 
 app.set('views', __dirname + '/views')
