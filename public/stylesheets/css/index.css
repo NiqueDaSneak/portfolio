@@ -86,6 +86,8 @@ footer {
     bottom: 2vh;
     left: -66vw;
     transition: left .4s; }
+    .chat-ui .btns a {
+      text-decoration: none; }
     .chat-ui .btns button {
       display: block;
       color: white;
