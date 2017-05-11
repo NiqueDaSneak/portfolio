@@ -23,10 +23,10 @@ $(document).ready(() => {
     })
     socket.on('menuButtons', (data) => {
         if (data.sendEmail) {
-            $('.btns').append("<button type='button' class='external'><a href='mailto:thisisdom4@gmail.com'>Craft your email</a></button>")
+            $('.btns').append("<a href='mailto:thisisdom4@gmail.com'><button type='button'>Craft your email</button></a>")
         }
         if (data.callPhone) {
-            $('.btns').append("<button type='button' class='external'><a href='tel:5132917758'>Make the call</a></button>")
+            $('.btns').append("<a href='tel:5132917758'><button type='button'>Make the call</button></a>")
         }
 
         for (var i = 0; i < data.data.length; i++) {
@@ -74,14 +74,15 @@ $(document).ready(() => {
     })
 
     $('.btns').click(() => {
-      if ($(event.target).parent().hasClass('external')) {
-        socket.emit('welcomeMessage')
+      console.log(event.target.value);
+      if (event.target.value === undefined) {
+        console.log('nothing clicked')
+      } else if (event.target.value) {
+        socket.emit('menuRequest', {data: event.target.value})
         $('.btns').empty()
         $('.messages').empty()
-      } else if (event.target.value === undefined) {
-        console.log('nothing clicked')
       } else {
-        socket.emit('menuRequest', {data: event.target.value})
+        socket.emit('welcomeMessage')
         $('.btns').empty()
         $('.messages').empty()
       }
