@@ -40,6 +40,34 @@ $(document).ready(() => {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     })
 
+    // img carosels
+    var counters = {
+      'people': 1,
+      'ideas': 1,
+      'proto': 1
+    }
+    $('section img').click((event) => {
+        var section = $(event.target).data('section')
+        var direction = $(event.target).data('direction')
+
+        if (direction === 'fwd') {
+          if (counters[section] === 3) {
+            counters[section] = 1
+          } else {
+            counters[section]++
+          }
+        } else {
+          if (counters[section] === 1) {
+            counters[section] = 3
+          } else {
+            counters[section]--
+          }        }
+
+        console.log('/img/' + section + counters[section] + '.png')
+        $('.' + section + '-img').attr('src', '/img/' + section + counters[section] + '.png')
+
+    })
+    
     // INITIAL FADE IN
     $('.main-content').fadeIn(1200)
     $('.main-content p:first-of-type').fadeTo(3000, 1)
