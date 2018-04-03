@@ -29,6 +29,9 @@ $(document).ready(() => {
     // rotation of logo
     setInterval(() => {
       $('.logo').toggleClass('rotate')
+      setTimeout(() => {
+        $('.logo').toggleClass('rotate')
+      }, 800)
     }, 4000)
 
     // click to top btn
