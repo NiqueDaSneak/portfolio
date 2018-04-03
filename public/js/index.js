@@ -21,9 +21,19 @@ $(document).ready(() => {
 
     // UI
 
+    // link logo to homepage
+    $('.logo').click(() => {
+      window.location = "/";
+    })
+
+    // rotation of logo
+    setInterval(() => {
+      $('.logo').toggleClass('rotate')
+    }, 4000)
+
     // INITIAL FADE IN
     $('.main-content').fadeIn(1200)
-    $('.main-content p:first-of-type').fadeTo(4800, 1)
+    $('.main-content p:first-of-type').fadeTo(3000, 1)
 
 
     // MENU TOGGLE
@@ -41,7 +51,11 @@ $(document).ready(() => {
     // load approach screen
     $('.approach').on('click', () => {
           // add class approach-ui to '.main-content'
-          $('.main-content').addClass('approach-ui')
+          $('.main-content p').remove()
+          $('footer').remove()
+          $('.menu').remove()
+          $('.main-content').addClass('approach-ui').css('display', 'inline-block')
+          $('.logo').addClass('approach-ui')
     })
 
     // exit chat

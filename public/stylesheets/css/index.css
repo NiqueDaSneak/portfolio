@@ -6,12 +6,31 @@ body {
   display: none; }
   .main-content p:first-of-type {
     color: #4b535f;
-    opacity: 0; }
+    opacity: 0;
+    transition: opacity 1s; }
+
+.main-content.approach-ui {
+  display: inline-block;
+  width: 100vw;
+  background-color: #1D352B;
+  transition: background-color .5s ease-in 1.5s;
+  height: 24vw; }
 
 .logo {
   padding-top: 20vh;
   width: 60vw;
-  max-width: 300px; }
+  max-width: 300px;
+  transition: width 1s, padding-top 1s, -webkit-transform 1s;
+  transition: width 1s, padding-top 1s, transform 1s;
+  transition: width 1s, padding-top 1s, transform 1s, -webkit-transform 1s; }
+
+.logo.approach-ui {
+  width: 20vw;
+  padding-top: 1vh; }
+
+.logo.rotate {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
 
 .online {
   width: 1vw;
@@ -70,6 +89,9 @@ footer {
         font-size: 22px; } }
     .menu a:hover {
       color: white; }
+
+.approach-ui p {
+  opacity: 0; }
 
 body {
   font-family: 'Roboto', sans-serif;

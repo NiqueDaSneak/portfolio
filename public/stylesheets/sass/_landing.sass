@@ -7,11 +7,26 @@ body
   p:first-of-type
     color: $siteGrey
     opacity: 0
+    transition: opacity 1s
+.main-content.approach-ui
+  display: inline-block
+  width: 100vw
+  background-color: #1D352B
+  // transition-delay: background-color 1.5s
+  // transition: background-color .4s
+  transition: background-color .5s ease-in 1.5s
+  height: 24vw
 
 .logo
   padding-top: 20vh
   width: 60vw
   max-width: 300px
+  transition: width 1s, padding-top 1s, transform 1s
+.logo.approach-ui
+    width: 20vw
+    padding-top: 1vh
+.logo.rotate
+  transform: rotateY(180deg)
 
 .online
   width: 1vw
@@ -47,3 +62,7 @@ footer
       transition: color .6s
       &:hover
         color: white
+
+.approach-ui
+  .logo
+    // width: 10vw !important
