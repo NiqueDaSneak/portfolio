@@ -74,18 +74,20 @@ $(document).ready(() => {
     let touchendX = 0
     let touchendY = 0
 
-    const gestureZone = document.getElementById('gestureZone')
+    const gestureZone = document.getElementsByClassName('gestureZone')
 
-    gestureZone.addEventListener('touchstart', function(event) {
+    for (var i = 0; i < gestureZone.length; i++) {
+      gestureZone[i].addEventListener('touchstart', function(event) {
         touchstartX = event.changedTouches[0].screenX
         touchstartY = event.changedTouches[0].screenY
-    }, false)
+      }, false)
 
-    gestureZone.addEventListener('touchend', function(event) {
+      gestureZone[i].addEventListener('touchend', function(event) {
         touchendX = event.changedTouches[0].screenX
         touchendY = event.changedTouches[0].screenY
         handleGesture(event)
-    }, false)
+      }, false)
+    }
 
     function handleGesture(event) {
       if (touchendX <= touchstartX) {
