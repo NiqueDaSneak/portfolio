@@ -13,8 +13,12 @@ body {
   display: inline-block;
   width: 100vw;
   background-color: #1D352B;
-  transition: background-color .5s ease-in 1.5s;
-  height: 24vw; }
+  transition: background-color .5s ease-in .6s;
+  height: 24vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1; }
 
 .logo {
   padding-top: 20vh;
@@ -68,6 +72,65 @@ footer {
       transition: color .6s; }
       footer .links a:hover {
         color: white; }
+
+.approach {
+  opacity: 0;
+  color: #4b535f;
+  transition: opacity 1s; }
+  .approach p:first-of-type {
+    margin-top: 19vh;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-bottom: 8vh; }
+
+.approach.hide {
+  display: none; }
+
+.icons {
+  height: 60vh; }
+  .icons img {
+    width: 24vw;
+    vertical-align: middle;
+    margin-left: 4vw; }
+  .icons div {
+    display: inline-block;
+    width: 54vw;
+    margin-bottom: 6vh;
+    margin-top: 6vh; }
+
+.approach {
+  z-index: 2; }
+  .approach section {
+    position: relative; }
+    .approach section p:first-of-type {
+      margin-top: 0vh;
+      margin-bottom: 2vh;
+      font-size: 6vw; }
+    .approach section p:last-of-type {
+      margin-top: 6vh;
+      width: 80vw;
+      margin-left: 10vw;
+      margin-bottom: 14vh; }
+    .approach section img:first-of-type {
+      width: 5vw;
+      position: absolute;
+      left: 4vw;
+      top: 18vh;
+      display: none; }
+    .approach section img:nth-of-type(2) {
+      width: 5vw;
+      position: absolute;
+      right: 4vw;
+      top: 18vh;
+      display: none; }
+    .approach section img:last-of-type {
+      width: 100vw; }
+
+.FAB {
+  width: 18vw;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh; }
 
 .menu {
   text-align: center;
