@@ -18,27 +18,13 @@ $(document).ready(() => {
 
     // SOCKET & BOT CLIENT
     var socket = io.connect();
-    socket.on('botMessage', (data) => {
-        $('.messages').prepend("<p class='bot-message'>" + data.data + "</p>").hide().fadeIn('slow');
-    })
-    socket.on('menuButtons', (data) => {
-        if (data.sendEmail) {
-            $('.btns').append("<a href='mailto:thisisdom4@gmail.com'><button type='button'>Craft your email</button></a>")
-        }
-        if (data.callPhone) {
-            $('.btns').append("<a href='tel:5132917758'><button type='button'>Make the call</button></a>")
-        }
-
-        for (var i = 0; i < data.data.length; i++) {
-            $('.btns').append("<button type='button' value='" + data.data[i] + "'>" + data.data[i] + "</button>")
-            $('.btns').css('left', '0vh')
-        }
-    })
 
     // UI
 
     // INITIAL FADE IN
     $('.main-content').fadeIn(1200)
+    $('.main-content p:first-of-type').fadeTo(4800, 1)
+
 
     // MENU TOGGLE
     $('.toggle').on('click', () => {
@@ -52,15 +38,10 @@ $(document).ready(() => {
         return false
     })
 
-    // CHAT
-
-    // load welcomeMessage
-    $('.chat').on('click', () => {
-        $('.main-content').fadeOut(1200).promise().done(() => {
-            $('.chat-ui').fadeIn(1200).promise().done(() => {
-                socket.emit('welcomeMessage')
-            })
-        })
+    // load approach screen
+    $('.approach').on('click', () => {
+          // add class approach-ui to '.main-content'
+          $('.main-content').addClass('approach-ui')
     })
 
     // exit chat
@@ -71,21 +52,6 @@ $(document).ready(() => {
             $('.messages').empty()
         })
         return false
-    })
-
-    $('.btns').click(() => {
-      console.log(event.target.value);
-      if (event.target.value === undefined) {
-        console.log('nothing clicked')
-      } else if (event.target.value) {
-        socket.emit('menuRequest', {data: event.target.value})
-        $('.btns').empty()
-        $('.messages').empty()
-      } else {
-        socket.emit('welcomeMessage')
-        $('.btns').empty()
-        $('.messages').empty()
-      }
     })
 
     // end of DOM READY

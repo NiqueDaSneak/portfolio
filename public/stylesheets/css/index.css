@@ -5,7 +5,8 @@ body {
 .main-content {
   display: none; }
   .main-content p:first-of-type {
-    color: #4b535f; }
+    color: #4b535f;
+    opacity: 0; }
 
 .logo {
   padding-top: 20vh;
@@ -69,55 +70,6 @@ footer {
         font-size: 22px; } }
     .menu a:hover {
       color: white; }
-
-.chat-ui {
-  display: none; }
-  .chat-ui header {
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    background-color: #4b535f;
-    height: 10vh; }
-    .chat-ui header a {
-      color: white;
-      line-height: 10vh; }
-  .chat-ui .btns {
-    position: fixed;
-    bottom: 2vh;
-    left: -66vw;
-    transition: left .4s; }
-    .chat-ui .btns a {
-      text-decoration: none; }
-    .chat-ui .btns button {
-      display: block;
-      color: white;
-      font-size: 6.4vw;
-      margin-top: 2vh;
-      background-color: #4b535f;
-      width: 64vw;
-      border: none;
-      padding: 1vh 0vh 1vh 0vh;
-      border-radius: 0vh 2vh 2vh 0vh;
-      font-weight: 300; }
-      @media only screen and (min-width: 720px) {
-        .chat-ui .btns button {
-          width: 30vw;
-          font-size: 1.6vw; } }
-      .chat-ui .btns button a {
-        text-decoration: none;
-        color: white; }
-
-.messages {
-  height: 75vh;
-  position: absolute;
-  bottom: 8vh;
-  margin-left: 4vw;
-  margin-right: 4vw; }
-  @media only screen and (min-width: 720px) {
-    .messages {
-      margin-left: 5.5vw; } }
-  .messages p {
-    color: #4b535f; }
 
 body {
   font-family: 'Roboto', sans-serif;
