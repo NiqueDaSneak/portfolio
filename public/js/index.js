@@ -93,7 +93,7 @@ $(document).ready(() => {
         console.log($(event.target))
 
             var section = $(event.target).data('section')
-            var direction = $(event.target).data('direction')
+            var direction = 'back'
 
             if (direction === 'fwd') {
               if (counters[section] === 3) {
@@ -111,7 +111,7 @@ $(document).ready(() => {
             console.log('/img/' + section + counters[section] + '.png')
             $('.' + section + '-img').attr('src', '/img/' + section + counters[section] + '.png')
 
-        
+
       }
 
       if (touchendX >= touchstartX) {
@@ -119,7 +119,7 @@ $(document).ready(() => {
         console.log($(event.target))
 
             var section = $(event.target).data('section')
-            var direction = $(event.target).data('direction')
+            var direction = 'fwd'
 
             if (direction === 'fwd') {
               if (counters[section] === 3) {
@@ -137,7 +137,7 @@ $(document).ready(() => {
             console.log('/img/' + section + counters[section] + '.png')
             $('.' + section + '-img').attr('src', '/img/' + section + counters[section] + '.png')
 
-        
+
       }
 
       if (touchendY <= touchstartY) {
