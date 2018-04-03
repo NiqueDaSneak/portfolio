@@ -113,19 +113,17 @@ footer {
       margin-left: 10vw;
       margin-bottom: 14vh; }
     .approach section img:first-of-type {
-      width: 5vw;
-      position: absolute;
-      left: 4vw;
-      top: 18vh;
-      display: none; }
-    .approach section img:nth-of-type(2) {
-      width: 5vw;
-      position: absolute;
-      right: 4vw;
-      top: 18vh;
-      display: none; }
-    .approach section img:last-of-type {
       width: 100vw; }
+    .approach section img:nth-of-type(2) {
+      width: 3vw;
+      position: absolute;
+      left: 40vw;
+      top: 38vh; }
+    .approach section img:last-of-type {
+      width: 3vw;
+      position: absolute;
+      right: 40vw;
+      top: 38vh; }
 
 .FAB {
   width: 18vw;
