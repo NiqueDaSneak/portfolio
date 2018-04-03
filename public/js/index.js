@@ -31,6 +31,12 @@ $(document).ready(() => {
       $('.logo').toggleClass('rotate')
     }, 4000)
 
+    // click to top btn
+    $('.FAB').click(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    })
+
     // INITIAL FADE IN
     $('.main-content').fadeIn(1200)
     $('.main-content p:first-of-type').fadeTo(3000, 1)
@@ -49,23 +55,20 @@ $(document).ready(() => {
     })
 
     // load approach screen
-    $('.approach').on('click', () => {
+    $('.approach-btn').on('click', () => {
           // add class approach-ui to '.main-content'
           $('.main-content p').remove()
           $('footer').remove()
           $('.menu').remove()
           $('.main-content').addClass('approach-ui').css('display', 'inline-block')
           $('.logo').addClass('approach-ui')
-    })
+          setTimeout(() => {
+            $('.approach').removeClass('hide')
+          }, 100)
 
-    // exit chat
-    $('.chat-ui header a').click(() => {
-        $('.chat-ui').fadeOut(1200, () => {
-            $('.main-content').fadeIn(1200)
-            $('.btns').empty()
-            $('.messages').empty()
-        })
-        return false
+          setTimeout(() => {
+            $('.approach').css('opacity', '1')
+          }, 500)
     })
 
     // end of DOM READY
