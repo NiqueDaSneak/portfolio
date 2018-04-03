@@ -27,45 +27,7 @@ app.get('/approach', (req, res) => {
 
 
 io.on('connection', (socket) => {
-    console.log('Server connected to client!')
-
-    socket.on('welcomeMessage', () => {
-
-        socket.emit('botMessage', {data: db.welcomeMessage.message})
-
-        var menuButtons = function() {
-            return socket.emit('menuButtons', {data: db.welcomeMessage.options})
-        }
-
-        setTimeout(menuButtons, 1200)
-    })
-
-    socket.on('mainMenu', () => {
-        socket.emit('botMessage', {data: mainMenuMessage()})
-    })
-
-    socket.on('menuRequest', (data) => {
-      console.log(data.data);
-        socket.emit('botMessage', {
-            data: db[data.data].message
-        })
-        if (data.data === 'Send Email') {
-            socket.emit('menuButtons', {
-                data: db[data.data].options,
-                sendEmail: true
-            })
-        } else if (data.data === 'Call Him') {
-          socket.emit('menuButtons', {
-              data: db[data.data].options,
-              callPhone: true
-          })
-        } else {
-            socket.emit('menuButtons', {
-                data: db[data.data].options
-            })
-        }
-    })
-
+  console.log('Server connected to client!')
 })
 
 var port = process.env.PORT || 3000
