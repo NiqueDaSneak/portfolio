@@ -21,6 +21,11 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
+app.get('/approach', (req, res) => {
+  res.sendFile(path.join(__dirname + '/views/approach.html'))
+})
+
+
 io.on('connection', (socket) => {
     console.log('Server connected to client!')
 
